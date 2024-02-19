@@ -16,9 +16,10 @@ public class Musica {
     @ManyToOne
     private Artista artista;//attribute mapped by Artista.class
 
-    @Override
-    public String toString() {
-        return  "Id= " + id + "| Nome= "+ nome+ "| Artista= " + artista + "| musicas=(WIP)";
+    public Musica (){}
+    public Musica(String nome, Artista artista) {
+        this.nome = nome;
+        this.artista = artista;
     }
 
     public Long getId() {
@@ -43,5 +44,10 @@ public class Musica {
 
     public void setArtista(Artista artista) {
         this.artista = artista;
+    }
+
+    @Override
+    public String toString() {
+        return nome;
     }
 }

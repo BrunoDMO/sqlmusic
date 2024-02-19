@@ -65,4 +65,8 @@ public class Artista {
     public void setMusica(List<Musica> musica) {
         this.musica = musica;
     }
+
+    public void addMusica(Musica musica) {
+        this.musica.add(musica);
+    }
 }
