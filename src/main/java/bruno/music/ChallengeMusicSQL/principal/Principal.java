@@ -66,7 +66,7 @@ public class Principal {
     }
     private void ListarMusicas() {
         List<Musica> musicas = repository.mostrarListaMusicas();
-        musicas.forEach(e -> System.out.printf("Musicas: %s | Artista: %s \n",e, e.getArtista().getNome()));
+        musicas.forEach(e -> System.out.printf("Musica: %s | Artista: %s \n",e, e.getArtista().getNome()));
 
     }
     private void cadastrarMusica() {
